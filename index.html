@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¿Nos vemos? | Placenet</title>
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¿Nos vemos? | Placenet</title>
+
+  <!-- OPEN GRAPH / WHATSAPP / FACEBOOK / LINKEDIN -->
+  <meta property="og:title" content="¿Nos vemos? | Placenet" />
+  <meta property="og:description" content="Placenet x BERONI | La nueva ola tecnológica" />
+  <meta property="og:image" content="preview.png" />
+  <meta property="og:url" content="https://tusitio.com/" />
+  <meta property="og:type" content="website" />
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="¿Nos vemos? | Placenet" />
+  <meta name="twitter:description" content="Placenet x BERONI | La nueva ola tecnológica" />
+  <meta name="twitter:image" content="preview.jpg" />
+
+  <!-- FUENTE + CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+</head>
+<body>
+  
+    <div class="card active card-1" id="card-1">
+    <img class="logo-w" src="LOGO PLACENET.png" alt="Placenet logo">
+    <h1>🚪 TOC TOC...<br>¿Hay alguien ahí?</h1>
+    <p></p>
+    <div class="button-group">
+      <button onclick="nextCard(2)">Abrir</button>
+    </div>
+  </div>
+  
+  <div class="card card-2" id="card-2">
+      <button class="back-arrow" onclick="prevCard(1)" aria-label="Atrás">←</button>
+      <h1>👋<br>¡Oh yeah!<br>¡Estás aquí!</h1>
+      <div class="progress-bar-container" id="progress-bar-container-2">
+        <div class="progress-bar" id="progress-bar-2"></div>
+      </div>
+      
+  </div>
+  
+  <div class="card card-3" id="card-3">
+    <button class="back-arrow" onclick="prevCard(1)" aria-label="Atrás">←</button>
+    <span class="interrogante-animado" aria-hidden="true">¿</span>
+    <h1>Permíteme hacerte una sencilla pregunta…</h1>
+    <div class="timer-circle">
+      <svg width="60" height="60">
+        <circle cx="30" cy="30" r="28" stroke="#efc041" stroke-width="4" fill="none" />
+        <circle id="progress" cx="30" cy="30" r="28" stroke="#fff" stroke-width="4" fill="none" 
+          stroke-dasharray="176" stroke-dashoffset="0" />
+      </svg>
+    </div>
+  </div>
+  
+  <div class="card card-4" id="card-4">
+    <button class="back-arrow" onclick="prevCard(1)" aria-label="Atrás">←</button>
+    <h1>¿Estás buscando la próxima gran ola para mantenerte en la cima del <em>techturismo</em>?</h1>
+    <p>Porque si no la estás viendo… es que aún no conoces Placenet 😉</p>
+    <div class="progress-bar-container" id="progress-bar-container-4">
+      <div class="progress-bar" id="progress-bar-4"></div>
+    </div>
+    <div class="button-group button-2" id="button-group-4">
+      <button onclick="nextCard(5)" aria-label="Sí, por supuesto">✅</button>
+      <button onclick="nextCard(51)" aria-label="No, no realmente">❌</button>
+    </div>
+  </div>
+  
+  <div class="card card-51" id="card-51">
+    <button class="back-arrow" onclick="prevCard(4)" aria-label="Atrás">←</button>
+    <h1>😅 Mmm… puede que te hayas confundido de botón.</h1>
+    <p>Vamos a preguntártelo de nuevo, por si acaso…</p>
+    <h1>¿QUIERES MANTENERTE EN EL TOP DEL <em>TECHTURISMO</em>?</h1>
+    <div class="progress-bar-container" id="progress-bar-container-51">
+      <div class="progress-bar" id="progress-bar-51"></div>
+    </div>
+    <div class="button-group" id="button-group-51">
+      <button onclick="nextCard(5)">✅</button>
+      <button onclick="nextCard(52)">❌</button>
+    </div>
+  </div>
+  
+  <div class="card card-52" id="card-52">
+    <button class="back-arrow" onclick="prevCard(51)" aria-label="Atrás">←</button>
+    <h1>🧠 Lo respetamos. Pero creemos que podemos sorprenderte.</h1>
+    <p>Danos una oportunidad. Solo tienes que leer esto. Te lo dejamos fácil 👇</p>
+    <div class="progress-bar-container" id="progress-bar-container-52">
+      <div class="progress-bar" id="progress-bar-52"></div>
+    </div>
+    <div class="button-group" id="button-group-52" >
+      <button onclick="nextCard(100)">Ver</button>
+    </div>
+  </div>
+  
+  <div class="card card-5" id="card-5">
+    <button class="back-arrow" onclick="prevCard(4)" aria-label="Atrás">←</button>
+    <h1>😎 ¡Estaba claro! Vaya pregunta más obvia, ¿no?</h1>
+    <h1>Y ahora la buena: ¿Sabes cómo surfear esa ola?</h1>
+    <p>Nosotros sí. Y queremos contártelo.</p>
+    <div class="progress-bar-container" id="progress-bar-container-5">
+      <div class="progress-bar" id="progress-bar-5"></div>
+    </div>
+    <div class="button-group" id="button-group-5">
+      <button onclick="nextCard(100)">Saber más</button>
+    </div>
+  </div>
+  
+  <div class="card card-100" id="card-100">
+    <button class="back-arrow" onclick="prevCard(5)" aria-label="Atrás">←</button>
+    <h1>Te presentamos cómo Placenet puede ayudarte a <strong></strong>conectar, mejorar la experiencia y aprovechar todo el potencial del lugar y el momento.</h1>
+    <p>Es simple. Es útil. Y empieza aquí 👇</p>
+    <div class="button-group" id="button-group-100">
+      <button onclick="window.open('BERONI x placenet.pdf', '_blank')" aria-label="Ver presentación">Ver presentación</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
